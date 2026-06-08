@@ -1,0 +1,13 @@
+- name: Terminus cli installer for Pantheon integration and automation
+  hosts: localhost
+
+  tasks:
+    - name: Add pantheon-systems tap
+      community.general.homebrew_tap:
+        name: pantheon-systems/external
+
+    - name: Install terminus cli via brew
+      community.general.homebrew:
+        name: pantheon-systems/external/terminus
+
+
