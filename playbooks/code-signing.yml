@@ -1,5 +1,5 @@
 ---
-- name: Enable code signing by creating an ssh key
+- name: Enable code signing, creating an ssh key if necessary
   hosts: localhost
   connection: local
   
