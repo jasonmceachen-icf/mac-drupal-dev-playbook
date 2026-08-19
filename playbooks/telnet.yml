@@ -1,0 +1,7 @@
+- name: Telnet
+  hosts: localhost
+
+  tasks:
+    - name: Install telnet via brew
+      community.general.homebrew:
+        name: telnet

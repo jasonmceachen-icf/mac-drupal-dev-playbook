@@ -1,0 +1,11 @@
+---
+- name: ChatGPT desktop
+  hosts: localhost
+
+  tasks:
+  - name: Install ChatGPT desktop app
+    community.general.homebrew_cask:
+      name: chatgpt
+      state: present
+
+

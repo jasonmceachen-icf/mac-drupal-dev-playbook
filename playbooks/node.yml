@@ -1,0 +1,7 @@
+- name: Node (nodejs) 
+  hosts: localhost
+
+  tasks:
+    - name: Install Node via brew
+      community.general.homebrew:
+        name: node 
